@@ -1,59 +1,49 @@
-const Character = require('./Character');
+import Character from './Character';
 
-class Bowman extends Character {
-    constructor(name) {
-        super(name, 'Bowman');
-        this.attack = 25;
-        this.defence = 25;
-    }
+export class Bowman extends Character {
+  constructor(name) {
+    super(name, 'Bowman');
+    this.attack = 25;
+    this.defence = 25;
+  }
 }
 
-class Swordsman extends Character {
-    constructor(name) {
-        super(name, 'Swordsman');
-        this.attack = 40;
-        this.defence = 10;
-    }
+export class Swordsman extends Character {
+  constructor(name) {
+    super(name, 'Swordsman');
+    this.attack = 40;
+    this.defence = 10;
+  }
 }
 
-class Magician extends Character {
-    constructor(name) {
-        super(name, 'Magician');
-        this.attack = 10;
-        this.defence = 40;
-    }
+export class Magician extends Character {
+  constructor(name) {
+    super(name, 'Magician');
+    this.attack = 10;
+    this.defence = 40;
+  }
 }
 
-class Daemon extends Character {
-    constructor(name) {
-        super(name, 'Daemon');
-        this.attack = 10;
-        this.defence = 40;
-    }
+export class Daemon extends Character {
+  constructor(name) {
+    super(name, 'Daemon');
+    this.attack = 10;
+    this.defence = 40;
+  }
 }
 
-class Undead extends Character {
-    constructor(name) {
-        super(name, 'Undead');
-        this.attack = 25;
-        this.defence = 25;
-    }
+export class Undead extends Character {
+  constructor(name) {
+    super(name, 'Undead');
+    this.attack = 25;
+    this.defence = 25;
+  }
 }
 
-class Zombie extends Character {
-    constructor(name) {
-        super(name, 'Zombie');
-        this.attack = 40;
-        this.defence = 10;
-    }
+export class Zombie extends Character {
+  constructor(name) {
+    super(name, 'Zombie');
+    this.attack = 40;
+    this.defence = 10;
+  }
 }
-
-
-module.exports = {
-    Bowman,
-    Swordsman,
-    Magician,
-    Daemon,
-    Undead,
-    Zombie,
-};
